@@ -1,0 +1,22 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "ES2017",
+    "declaration": true,
+    "rootDir": "src",
+    "outDir": "lib",
+    "types": ["@types/jest", "node"],
+    "jsx": "preserve",
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "noImplicitAny": false
+  },
+  "include": ["src", "src/OptionsSchema.json", "typings"],
+  "exclude": ["tests", "lib"],
+  "references": [
+    {
+      "path": "../gbc-compiler"
+    }
+  ]
+}
